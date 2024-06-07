@@ -1,12 +1,3 @@
-using FluentValidation;
-using GraphDatabase.API.Application.Behaviors;
-using GraphDatabase.API.Application.Commands;
-using GraphDatabase.API.Application.Queries;
-using GraphDatabase.API.Application.Validations;
-using GraphDatabase.Entities.Common;
-using GraphDatabase.Infrastructure.Services;
-using Microsoft.OpenApi.Models;
-
 namespace GraphDatabase.API.Extensions;
 
 public static class Extension
@@ -28,7 +19,7 @@ public static class Extension
         });
 
         // DataAccess Neo4j
-        
+
         services.RegisterDataAccessDependencies();
         builder.Services.AddOptions<ApplicationSettings>()
             .BindConfiguration("ApplicationSettings");

@@ -1,7 +1,3 @@
-using GraphDatabase.Entities.Common;
-using GraphDatabase.Entities.Domain;
-using GraphDatabase.Entities.ViewModels;
-
 namespace GraphDatabase.Infrastructure.Repositories;
 
 public interface IMoviesRepository

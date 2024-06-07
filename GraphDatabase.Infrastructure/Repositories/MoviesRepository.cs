@@ -1,7 +1,3 @@
-using GraphDatabase.Entities.Domain;
-using GraphDatabase.Infrastructure.Neo4j;
-using Neo4j.Driver;
-
 namespace GraphDatabase.Infrastructure.Repositories;
 
 public class MoviesRepository(DriverLifeCycle driver) : IMoviesRepository

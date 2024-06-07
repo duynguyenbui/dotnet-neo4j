@@ -1,6 +1,3 @@
-using FluentValidation;
-using GraphDatabase.API.Application.Commands;
-
 namespace GraphDatabase.API.Application.Validations;
 
 public class CreatePersonCommandValidator : AbstractValidator<CreatePersonCommand>

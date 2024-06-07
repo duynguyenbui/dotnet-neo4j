@@ -1,10 +1,3 @@
-using GraphDatabase.API.Application.Commands;
-using GraphDatabase.API.Extensions;
-using GraphDatabase.API.Services;
-using GraphDatabase.Entities.Domain;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-
 namespace GraphDatabase.API.Apis;
 
 public static class GraphDatabaseApi
@@ -26,8 +19,13 @@ public static class GraphDatabaseApi
         api.MapPost("/movies/acted-in", ActedIn);
 
         // Error API Routes
-        api.MapGet("/error", () => { throw new NotImplementedException(); });
+        api.MapGet("/error", HandleError);
         return api;
+    }
+
+    public static Task HandleError(HttpContext httpContext)
+    {
+        throw new NotImplementedException();
     }
 
     public static async Task<Ok<List<Dictionary<string, object>>>> SearchPeopleByName(

@@ -1,5 +1,3 @@
-using GraphDatabase.Infrastructure.Repositories;
-
 namespace GraphDatabase.API.Application.Queries;
 
 public class GraphDatabaseQueries(

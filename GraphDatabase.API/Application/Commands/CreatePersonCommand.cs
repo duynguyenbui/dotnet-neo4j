@@ -1,6 +1,3 @@
-using System.Runtime.Serialization;
-using MediatR;
-
 namespace GraphDatabase.API.Application.Commands;
 
 public class CreatePersonCommand : IRequest<bool>

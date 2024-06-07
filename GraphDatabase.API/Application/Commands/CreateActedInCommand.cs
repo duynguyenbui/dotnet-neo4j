@@ -1,5 +1,3 @@
-using MediatR;
-
 namespace GraphDatabase.API.Application.Commands;
 
 public class CreateActedInCommand : IRequest<bool>

@@ -1,5 +1,3 @@
-using System.Text.Json;
-
 namespace GraphDatabase.API.Middlewares;
 
 /// <summary>

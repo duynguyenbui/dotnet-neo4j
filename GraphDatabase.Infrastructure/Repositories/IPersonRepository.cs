@@ -1,5 +1,3 @@
-using GraphDatabase.Entities.Domain;
-
 namespace GraphDatabase.Infrastructure.Repositories;
 
 public interface IPersonRepository

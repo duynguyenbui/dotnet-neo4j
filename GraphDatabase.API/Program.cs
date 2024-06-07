@@ -1,7 +1,3 @@
-using GraphDatabase.API.Apis;
-using GraphDatabase.API.Extensions;
-using GraphDatabase.API.Middlewares;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddApplicationServices();
