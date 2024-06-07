@@ -9,13 +9,13 @@ builder.AddApplicationServices();
 var app = builder.Build();
 
 // Configure Middlewares
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseMiddleware<ErrorHandlerMiddleware>();
 app.MapGraphDatabaseApi();
+app.MapGet("/", () => "Hello, world!");
 
 app.Run();

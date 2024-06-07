@@ -1,26 +1,42 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: $title$
-  labels:
-    app: $title$
+  name: graphaspnet-svc
 spec:
-  replicas: $3$
+  replicas: 3
   selector:
     matchLabels:
-      app: $title$
+      app: graphaspnet-svc
   template:
     metadata:
-      name: $title$
+      name: graphaspnet-svc
       labels:
-        app: $title$
+        app: graphaspnet-svc
     spec:
       containers:
-        - name: $title$
-          image: $nginx$
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: $80$
-              protocol: $TCP$
-      restartPolicy: Always
-      $END$
+        - name: graphaspnet-svc
+          image: graphaspnet-svc:latest
+          imagePullPolicy: Never
+          env:
+            - name: ApplicationSettings__Neo4jConnection
+              value: nameof(Neo4jConnection)
+            - name: ApplicationSettings__Neo4jUser
+              value: neo4j
+            - name: ApplicationSettings__Neo4jPassword
+              value: neo4jpw
+            - name: ApplicationSettings__Neo4jDatabase
+              value: neo4j
+            - name: ApplicationName
+              value: GraphDatabase, Neo4j - API
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: graphaspnet-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: graphaspnet-svc
+  ports:
+    - port: 8080
+      targetPort: 8080
