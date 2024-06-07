@@ -19,11 +19,11 @@ spec:
           imagePullPolicy: Never
           env:
             - name: ApplicationSettings__Neo4jConnection
-              value: nameof(Neo4jConnection)
+              value: neo4j://my-neo4j-release:7687
             - name: ApplicationSettings__Neo4jUser
               value: neo4j
             - name: ApplicationSettings__Neo4jPassword
-              value: neo4jpw
+              value: neo4jpwd
             - name: ApplicationSettings__Neo4jDatabase
               value: neo4j
             - name: ApplicationName
