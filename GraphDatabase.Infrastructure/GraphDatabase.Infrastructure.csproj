@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\GraphDatabase.Entities\GraphDatabase.Entities.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Neo4j.Driver" Version="5.21.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0-preview.1.24080.9"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0-preview.1.24080.9"/>
+    </ItemGroup>
+
+</Project>

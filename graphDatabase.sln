@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDatabase.API", "GraphDatabase.API\GraphDatabase.API.csproj", "{056FFC9C-F841-4D67-BA59-22C5F09A7766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDatabase.Entities", "GraphDatabase.Entities\GraphDatabase.Entities.csproj", "{24779845-4982-4ADC-B3F0-F7579B41FA18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDatabase.Infrastructure", "GraphDatabase.Infrastructure\GraphDatabase.Infrastructure.csproj", "{F2E06CDF-E1F3-4D3E-A8FE-9CA97A61F603}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{056FFC9C-F841-4D67-BA59-22C5F09A7766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056FFC9C-F841-4D67-BA59-22C5F09A7766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056FFC9C-F841-4D67-BA59-22C5F09A7766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056FFC9C-F841-4D67-BA59-22C5F09A7766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24779845-4982-4ADC-B3F0-F7579B41FA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24779845-4982-4ADC-B3F0-F7579B41FA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24779845-4982-4ADC-B3F0-F7579B41FA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24779845-4982-4ADC-B3F0-F7579B41FA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E06CDF-E1F3-4D3E-A8FE-9CA97A61F603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E06CDF-E1F3-4D3E-A8FE-9CA97A61F603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E06CDF-E1F3-4D3E-A8FE-9CA97A61F603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E06CDF-E1F3-4D3E-A8FE-9CA97A61F603}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
