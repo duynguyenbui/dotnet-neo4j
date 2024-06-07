@@ -23,4 +23,4 @@ jobs:
           context: "{{defaultContext}}"
           file: GraphDatabase.API/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/graph-aspnet-svc:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/graphaspnet-svc:latest
