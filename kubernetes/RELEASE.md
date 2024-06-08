@@ -4,3 +4,7 @@
 ```zsh
     kubectl delete all --all --namespace neo4j
 ```
+
+```zsh
+    kubectl delete all --all --namespace ingress-nginx
+```

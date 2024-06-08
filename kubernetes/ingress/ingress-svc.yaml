@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-svc
+  labels:
+    name: ingress-svc
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - api.graphaspnet.com
+      secretName: graphaspnet-app-tls
+  rules:
+    - host: api.graphaspnet.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: graphaspnet-clusterip
+                port:
+                  number: 8080

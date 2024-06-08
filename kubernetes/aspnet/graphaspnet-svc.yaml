@@ -32,9 +32,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: graphaspnet-lb
+  name: graphaspnet-clusterip
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: graphaspnet-svc
   ports:
